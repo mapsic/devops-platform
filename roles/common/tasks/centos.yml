@@ -21,9 +21,8 @@
 - name: yum clean all and makecache
   command: "{{item}}"
   with_items:
-    - yum clean all
-    - yum update -y
-    # - yum makecache
+    - yum clean all    
+    - yum makecache
   args:
     warn: no
   tags:
